@@ -83,7 +83,7 @@ with tab1:
 with tab2 :
     st.subheader("库存优化")
     annual_demand = np.mean(y_train) * periods_per_year
-    EOQ = np.sqrt(2 * annual_demand * K / h)
+    EOQ = np.sqrt(2 * annual_demand * K / h*periods_per_year)
     st.markdown("经济订货量EOQ：")
     st.write(EOQ)
     st.markdown("安全库存:")
@@ -111,6 +111,7 @@ with tab2 :
     )
 
     st.altair_chart(chart2, use_container_width=True)
+
 
 
 
