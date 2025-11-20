@@ -12,7 +12,7 @@ import json
 from pyexpat.errors import messages
 from statsmodels.graphics.tukeyplot import results
 
-api_key="sk-aP1Pa39QakHU0jZ011431821C21946D9B4E66971757dEe25"
+api_key="your key"
 api_base="https://maas-api.cn-huabei-1.xf-yun.com/v1"
 MODEL_ID="xop3qwen1b7"
 client=OpenAI(api_key=api_key,base_url=api_base)
@@ -90,6 +90,7 @@ def dss_model(task="分类", ds_name="Iris", method="DecisionTree"):
 
 
 dss_model()
+
 
 
 
