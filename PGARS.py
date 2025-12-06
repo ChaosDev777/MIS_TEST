@@ -258,7 +258,7 @@ with tab3:
 
 
 #AI智能助手
-api_key=""
+api_key=st.secrets.get("OPENAI_API_KEY")
 api_base="https://maas-api.cn-huabei-1.xf-yun.com/v1"
 MODEL_ID="xop3qwen1b7"
 client=OpenAI(api_key=api_key,base_url=api_base)
@@ -294,3 +294,4 @@ with st.sidebar:
 
     st.subheader("建议：")
     st.write(ai_text)
+
